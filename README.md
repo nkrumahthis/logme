@@ -1,7 +1,8 @@
 # LOGME
 
-A Logging framework / System / Class / Module (however you want to call it)
-Logs are saved to a file by session/user (On-Device Logging), then these files are pushed to the Libtrack Firebase Storage (Remote Logging)
+## A Logging Class
+
+Logs are saved to a file by session/user (On-Device Logging), then these files are pushed to a Firebase Storage (Remote Logging)
 
 This framework logs by: 	
 - Level of Severity
