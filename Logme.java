@@ -15,8 +15,6 @@ public class Logme {
     final String STAGING = "STAGING";
     final String PRODUCTION = "PRODUCTION";
 
-    
-
     private String session;
     private String tag;
     private String environment;
@@ -27,34 +25,34 @@ public class Logme {
         this.environment = environment;
     }
 
-    private static void log(String environment, String tag, String session, String severity, String message){
-        
+    
+    public void log(String severity, String message){
+        String str = String.format("(%d) %d [%d] -%d: %d", severity, this.environment, this.session, this.tag, message);
+        System.out.println(str);
     }
 
 
-    public static void emergency(String message){
-
+    public void emergency(String message){
+        log(EMERGENCY, message);
     }
 
-    public static void alert(String message){
-
+    public void alert(String message){
+        log(ALERT, message);
     }
 
-    public static void warn(String message){
-
+    public void warn(String message){
+        log(WARNING, message);
     }
 
-    public static void nofify(String message){
-
+    public void nofify(String message){
+        log(NOTIFICATION, message);
     }
 
-    public static void info(String message){
-
+    public void info(String message){
+        log(INFORMATIONAL, message);
     }
 
-    public static void debug(String message){
-
+    public void debug(String message){
+        log(DEBUGGING, message);
     }
-
-
 }
