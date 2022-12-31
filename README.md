@@ -1,6 +1,6 @@
 # LOGME
 
-## A Logging Class
+## A Logging Library
 
 Logs are saved to a file by session/user (On-Device Logging), then these files are pushed to a Firebase Storage (Remote Logging)
 
