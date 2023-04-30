@@ -17,7 +17,7 @@ The System can be setup by configuration (based on Environment)
 
 ## Tests 
 
-Unit tests are included for the framework.
+Unit tests are not included for the framework yet.
 
 
 ## Driver Sample:
